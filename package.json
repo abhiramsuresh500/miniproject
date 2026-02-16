@@ -3,12 +3,11 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://abhiramsuresh500.github.io/miniproject",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite --host :: --port 3000",
-    "build": "node tools/generate-llms.js || true && vite build",
+    "build": "vite build",
     "preview": "vite preview --host :: --port 3000",
     "lint": "eslint . --quiet",
     "lint:warn": "eslint ."
