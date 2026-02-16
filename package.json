@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://abhiramsuresh500.github.io/miniproject",
+
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
