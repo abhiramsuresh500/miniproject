@@ -59,7 +59,7 @@ export const AuthProvider = ({ children }) => {
       if (error) throw error;
 
       if (data.user) {
-        // Create public user profile
+        
         const { error: profileError } = await supabase
           .from('users')
           .insert([
@@ -73,7 +73,7 @@ export const AuthProvider = ({ children }) => {
 
         if (profileError) {
           console.error('Error creating user profile:', profileError);
-          // Don't throw here, let the signup succeed, but warn
+          
           toast({
             title: 'Profile Warning',
             description: 'Account created but profile setup failed.',
